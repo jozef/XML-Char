@@ -2,6 +2,8 @@ package XML::Char;
 
 use utf8;
 
+=encoding UTF-8
+
 =head1 NAME
 
 XML::Char - validate characters for XML
