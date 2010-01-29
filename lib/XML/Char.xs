@@ -11,6 +11,12 @@ octet_to_uvuni(const U8 *s, STRLEN *retlen)
     return (UV) *s;
 }
 
+static UV
+f_utf8_to_uvuni(const U8 *s, STRLEN *retlen)
+{
+    return utf8_to_uvuni(s, retlen);
+}
+
 MODULE = XML::Char    PACKAGE = XML::Char
 
 void
@@ -29,7 +35,7 @@ _valid_xml_string(string)
 
     PPCODE:
         bytes    = (U8*)SvPV(string, len);
-        next_chr = SvUTF8(string) ? &utf8_to_uvuni : &octet_to_uvuni;
+        next_chr = SvUTF8(string) ? &f_utf8_to_uvuni : &octet_to_uvuni;
 
         while (len > 0) {
             uniuv = (*next_chr)(bytes, &ret_len);
