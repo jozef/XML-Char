@@ -89,6 +89,8 @@ __END__
 
 Jozef Kutej
 
+Aristotle Pagaltzis - completely rewrote the initial Char.XS to handle the SvUTF8 flag
+
 =head1 COPYRIGHT
 
 Copyright 2009 Jozef Kutej, all rights reserved.
