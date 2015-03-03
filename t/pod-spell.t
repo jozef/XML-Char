@@ -27,5 +27,9 @@ add_stopwords(qw(
 	localstatedir
 	sysconfdir
 	TODO
+    Pagaltzis
+    SvUTF
+    UTF
+    XS
 ));
 all_pod_files_spelling_ok();

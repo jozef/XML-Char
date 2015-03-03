@@ -8,6 +8,7 @@ my $builder = Module::Build->new(
     license             => 'perl',
     dist_author         => q{Jozef Kutej <jkutej@cpan.org>},
     dist_version_from   => 'lib/XML/Char.pm',
+    configure_requires  => { 'Module::Build' => 0.42 },
     build_requires => {
         'Test::More' => 0,
     },
@@ -16,9 +17,7 @@ my $builder = Module::Build->new(
     	File::Spec->catfile('lib', 'XML', 'Char.c'),
     	File::Spec->catfile('lib', 'XML', 'Char.o')
     ],
-    create_makefile_pl => 'traditional',
     create_readme       => 1,
-    sign                => 1,
     meta_merge => {
         resources => {
             repository => 'git://github.com/jozef/XML-Char.git',
