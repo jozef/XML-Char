@@ -3,7 +3,6 @@ Changes
 lib/XML/Char.pm
 lib/XML/Char.xs
 lib/XML/ppport.h
-Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
