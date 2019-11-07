@@ -80,6 +80,14 @@ the string has to be a Perl UTF-8 string (C<is_utf8_string()> - see L<perlapi/Un
 
 Returns true or false if C<$value> consists of valid UTF-8 XML characters.
 
+=head1 LINKS
+
+L<How can I strip invalid XML characters from strings in Perl?|https://stackoverflow.com/questions/1016910/how-can-i-strip-invalid-xml-characters-from-strings-in-perl>
+
+L<Extensible Markup Language (XML) 1.0|http://www.w3.org/TR/REC-xml/#charsets>
+
+L<Extensible Markup Language (XML) 1.1|https://www.w3.org/TR/xml11/#charsets>
+
 =head1 AUTHOR
 
 Jozef Kutej
